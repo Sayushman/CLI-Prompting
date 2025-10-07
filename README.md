@@ -27,8 +27,8 @@ An intelligent AI assistant built with Google's Gemini 2.5 Flash that uses chain
 
 1. Clone the repository:
  bash
-git clone https://github.com/yourusername/agentic-ai-assistant.git
-cd agentic-ai-assistant
+git clone https://github.com/Sayushman/CLI-Prompting.git
+cd CLI-Prompting 
 
 
 2. Install required dependencies:
