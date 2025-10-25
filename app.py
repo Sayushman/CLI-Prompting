@@ -55,16 +55,19 @@ st.set_page_config(page_title="AI Agent Dashboard", layout="wide")
 st.markdown("""
 <h1 style="
     text-align: center;
-    font-family: sans-serif;
+    font-family: Manuscript;
     font-size: 60px;
 ">
-🤖 Aayu-Agentic
+👨‍💻 Agentic CLI 
 </h1>
-""", unsafe_allow_html=True)
+""", unsafe_allow_html=True) 
 # st.title("🤖 Aayu-Agentic")
-st.write("Ask your query below and see how the AI reasons step-by-step using tools...")
+# st.write("Ask your query below and see how the AI reasons step-by-step using tools...")
+st.subheader("Ask your query below and see how the AI reasons step-by-step using tools...")
 
-user_query = st.text_input("💬 Enter your query here based on real-time tools:", placeholder="e.g., Enter your query here ..... ")
+
+# user_query = st.text_input("💬 Enter your query here based on real-time tools:", placeholder="e.g., Enter your query here ..... ")
+user_query = st.text_area("💬 Enter your query here based on real-time tools:", placeholder="e.g., Enter your query here ..... ", height=120)
 
 if user_query:
     message_history = [{"role": "system", "content": SYSTEM_PROMPT}]
